@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./ui/globals.css";
 import NavigationBar from "./ui/navigationBar";
+import BackToTopButton from "./ui/backToTopButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <NavigationBar height="h-12" spacing="px-4"/>
           {children}
         </div>
+        <BackToTopButton />
       </body>
       
     </html>
