@@ -1,94 +1,60 @@
-'use client';
-
 import Link from "next/link";
 import 'flowbite';
+import DropdownNavMenu from "./DropdownNavMenu";
 
-type DropdownNavMenuProps = {
-    title: string;
-    options: Array<{ label: string; href: string }>;
-};
-
-function DropdownNavMenu({ title, options }: DropdownNavMenuProps) {
-    return (
-        <div className="relative group">
-            <Link
-                href="#"
-                className="
-                    block
-                    text-platinum 
-                    hover:bg-cadet-gray
-                    hover:text-platinum
-                    dark:hover:bg-cadet-gray
-                    dark:hover:text-platinum
-                    text-center 
-                    inline-flex 
-                    items-center
-                    cursor-pointer"
-            >
-                {title}
-            </Link>
-
-            <div className="absolute left-0 hidden group-hover:block z-50">
-                <ul className="bg-rich-black shadow-lg rounded-md mt-2">
-                    {options.map((option, index) => (
-                        <li key={index}>
-                            <Link
-                                href={option.href}
-                                className="block px-4 py-2 text-platinum 
-                                           hover:bg-cadet-gray 
-                                           hover:text-platinum
-                                           dark:hover:bg-cadet-gray
-                                           dark:hover:text-platinum"
-                            >
-                                {option.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-
-
-export default function NavigationBar() {
+export default function NavigationBar({ height = "h-12", spacing = "px-4" }: { height?: string; spacing?: string } = {}) {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full flex bg-rich-black shadow-md">
-        <ul className="flex gap-6">
-            <li>
-                <Link href="/" className="
+    <nav className={`z-50 ${height} w-full flex bg-rich-black`}>
+        <ul className="flex gap-6 justify-center w-full h-full">
+            <li className="h-full">
+                <Link href="/" className={`
+                h-full
+                ${spacing}
                 text-platinum 
                 hover:bg-cadet-gray
                 hover:text-platinum
                 dark:hover:bg-cadet-gray
                 dark:hover:text-platinum
                 text-center 
-                inline-flex 
-                items-center">
+                flex 
+                items-center`}>
                     About Me
                 </Link>
             </li>
                 
-            <li>
-                <DropdownNavMenu title="Projects" options={[
-                    { label: "Master's Thesis", href: "/projects/master" },
-                    { label: "Bachelor's Thesis", href: "/projects/bachelor" },
-                ]} />
+            <li className="h-full">
+                <DropdownNavMenu 
+                    title="Projects" 
+                    spacing={spacing}
+                    options={[
+                        { label: "Master's Thesis", href: "/projects/master" },
+                        { label: "This Website", href: "/projects/website" },
+                        { label: "Bachelor's Thesis", href: "/projects/bachelor" },
+                    ]} 
+                />
             </li>
 
-            <li>
-                <DropdownNavMenu title="Hobbies" options={[
-                    { label: "Cooking", href: "/hobbies/cooking" },
-                    { label: "Traveling", href: "/hobbies/traveling" },
-                ]} />
+            <li className="h-full">
+               <Link href="/hobbies" className={`
+                h-full
+                ${spacing}
+                text-platinum 
+                hover:bg-cadet-gray
+                hover:text-platinum
+                dark:hover:bg-cadet-gray
+                dark:hover:text-platinum
+                text-center 
+                flex 
+                items-center`}>
+                    Hobbies
+                </Link>
             </li>
             
-            <li>
+            <li className="h-full">
                 <Link
                     href="https://www.linkedin.com/in/mihai-mitrea-6b9335237"
                     target="_blank"
-                    className="text-platinum hover:text-cadet-gray inline-flex items-center"
+                    className={`h-full ${spacing} text-platinum hover:text-cadet-gray flex items-center`}
                 >
                     <svg
                     className="w-5 h-5"
@@ -101,11 +67,11 @@ export default function NavigationBar() {
                 </Link>
             </li>
 
-            <li>
+            <li className="h-full">
                 <Link
                     href="https://github.com/Miha5092"
                     target="_blank"
-                    className="text-platinum hover:text-cadet-gray inline-flex items-center"
+                    className={`h-full ${spacing} text-platinum hover:text-cadet-gray flex items-center`}
                 >
                     <svg
                     className="w-5 h-5"
