@@ -7,10 +7,10 @@ function FirstImpression() {
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8 w-full px-20 py-16 bg-cadet-gray">
           <div className="flex-1 max-w-[700px] text-center md:text-left order-1 md:order-1">
             <h1 className="text-4xl md:text-6xl font-bold text-center xl:text-left mb-4">
-              Hi, I'm Mihai
+              Hi, I&apos;m Mihai
             </h1>
             <p className="text-lg xl:text-xl text-gray-700 text-left mb-6">
-              I should write a short description about myself here, but I don't know what to write...
+              I should write a short description about myself here, but I don&apos;t know what to write...
             </p>
           </div>
             
@@ -34,6 +34,7 @@ export default function Home() {
       <TextSection
         textComponents={[
           <HeaderAndText
+            key="why-this-website"
             header="Why this website?"
             paragraphs={[
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare nisi, at finibus velit. Duis ac purus turpis. Duis urna nulla, porta ac arcu maximus, interdum mollis lacus. Proin imperdiet gravida sem. Curabitur iaculis vel neque non rutrum. In sed enim nec lectus lacinia laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum nec justo a auctor. Sed iaculis porta tristique. Donec bibendum odio finibus mauris condimentum, eu vehicula neque mattis. Curabitur a blandit velit. Duis at justo quis est consequat tincidunt. Nunc et malesuada urna. Curabitur dictum elit quis ex volutpat, nec molestie nulla commodo. Sed viverra dignissim nisi vitae faucibus.",
@@ -42,6 +43,7 @@ export default function Home() {
             ]}
           />,
           <HeaderAndText
+            key="about-me"
             header="A bit about me"
             paragraphs={[
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut ornare nisi, at finibus velit. Duis ac purus turpis. Duis urna nulla, porta ac arcu maximus, interdum mollis lacus. Proin imperdiet gravida sem. Curabitur iaculis vel neque non rutrum. In sed enim nec lectus lacinia laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum nec justo a auctor. Sed iaculis porta tristique. Donec bibendum odio finibus mauris condimentum, eu vehicula neque mattis. Curabitur a blandit velit. Duis at justo quis est consequat tincidunt. Nunc et malesuada urna. Curabitur dictum elit quis ex volutpat, nec molestie nulla commodo. Sed viverra dignissim nisi vitae faucibus.",
