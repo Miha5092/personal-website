@@ -14,7 +14,7 @@ function FirstImpression() {
             
           <div className="flex-1 max-w-[400px] order-2 md:order-2">
               <Image
-                  src="/portrait.jpeg"
+                  src="/cat.jpg"
                   alt="Image"
                   width={900}
                   height={900}

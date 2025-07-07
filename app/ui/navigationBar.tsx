@@ -1,6 +1,6 @@
 import Link from "next/link";
 import 'flowbite';
-import DropdownNavMenu from "./DropdownNavMenu";
+import DropdownNavMenu from "./dropdownNavMenu";
 
 export default function NavigationBar({ height = "h-12", spacing = "px-4" }: { height?: string; spacing?: string } = {}) {
   return (
