@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define RGB channel values for your palette (optional for future use) */
+:root {
+  --rich-black: 7, 16, 19;
+  --pacific-cyan: 35, 181, 211;
+  --moonstone: 117, 171, 188;
+  --cadet-gray: 162, 174, 187;
+  --platinum: 223, 224, 226;
+}
+
+body {
+  background: rgb(var(--platinum));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
