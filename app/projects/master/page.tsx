@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Master's Thesis",
+  description: "A detailed overview of my master's thesis project.",
+};
+
 export default function MasterProjectPage() {
     return (
         <main className="flex flex-col items-center justify-center min-h-screen p-8">

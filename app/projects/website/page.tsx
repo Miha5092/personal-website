@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Website Project",
+  description: "A detailed overview of the process of building my website.",
+};
+
 export default function WebsitePage() {
     return (
         <main className="flex flex-col items-center justify-center min-h-screen p-8">
