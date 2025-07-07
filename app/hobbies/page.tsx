@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Hobbies",
+  description: "A list of my hobbies and interests.",
+};
+
 export default function HobbiesPage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-8">
