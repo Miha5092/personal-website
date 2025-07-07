@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./ui/globals.css";
 import NavigationBar from "./ui/navigationBar";
 import BackToTopButton from "./ui/backToTopButton";
+import Footer from "./ui/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,10 @@ export default function RootLayout({
         <div className="grid grid-rows-[auto_1fr]">
           <NavigationBar height="h-12" spacing="px-4"/>
           {children}
+          <BackToTopButton />
+          <Footer />
         </div>
-        <BackToTopButton />
       </body>
-      
     </html>
   );
 }
