@@ -14,7 +14,7 @@ export function HeaderAndText({header, paragraphs}: {header: string, paragraphs:
 
 export default function TextSection({textComponents} : {textComponents: Array<React.ReactNode>}) {
   return (
-    <div className="flex flex-col items-center justify-center text-justify gap-4 w-4/5 md:w-3/4 px-4 py-8 max-w-full overflow-hidden">
+    <div className="flex flex-col items-center justify-center text-justify mt-8 mb gap-4 w-5/6 md:w-4/5 lg:w-3/4 max-w-[1100px] overflow-hidden">
       {textComponents.map((component, index) => (
           <div key={index} className="w-full max-w-full overflow-hidden">
             {component}
