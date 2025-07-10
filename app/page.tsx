@@ -7,13 +7,16 @@ import { whyThisWebsite, aboutMe, education } from "./text/mainPage";
 function FirstImpression() {
   return (
     <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-60 w-full px-20 py-16 bg-cadet-gray">
-      <div className="flex-1 max-w-[700px] text-center md:text-left order-1 md:order-1">
-        <h2 className="text-3xl md:text-4xl font-bold text-center xl:text-left mb-4">
-          Hi, I&apos;m Mihai
-        </h2>
-        <p className="text-base xl:text-lg text-gray-700 text-left mb-6">
-          I should write a short description about myself here, but I don&apos;t know what to write...
-        </p>
+      <div className="order-1 md:order-1">
+        <div className="flex-1 max-w-[700px] text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Hello, I'm Mihai Mitrea
+          </h1>
+          <p className="text-lg md:text-xl text-gray-700 mb-6">
+            Welcome to my personal website! Here you can find out more about me,
+            my projects, and what I am up to.
+          </p>
+        </div>
       </div>
 
       <div className="flex-1 max-w-[400px] order-2 md:order-2">
