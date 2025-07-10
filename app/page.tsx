@@ -6,27 +6,40 @@ import { whyThisWebsite, aboutMe, education } from "./text/mainPage";
 
 function FirstImpression() {
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-center xl:gap-60 w-full px-20 py-16 bg-cadet-gray">
-      <div className="order-1 md:order-1">
-        <div className="flex-1 max-w-[700px] text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Hello, I'm Mihai Mitrea
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-6">
-            Welcome to my personal website! Here you can find out more about me,
-            my projects, and what I am up to.
-          </p>
-        </div>
-      </div>
+    <div className="flex w-full bg-cadet-gray justify-center">
+      <div className="flex flex-col xl:flex-row items-center justify-center py-16 w-full md:w-4/5 xl:w-3/4 max-w-[1400px]">
+        <div className="flex-1 order-1 flex flex-col xl:mr-16">
+          <div className="flex-1 max-w-[600px] text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Hello, I'm Mihai Mitrea
+            </h1>
+            <p className="text-lg md:text-xl text-gray-700 mb-6">
+              Welcome to my personal website! Here you can find out more about me,
+              my projects, and what I am up to.
+            </p>
+          </div>
 
-      <div className="flex-1 max-w-[400px] order-2 md:order-2">
+          <div className="hidden xl:block text-center md:text-left">
+            <a href="/troll.pdf" className="text-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block no-underline cursor-pointer">
+              Download My CV
+            </a>
+          </div>
+
+        </div>
+
         <Image
           src="/cat.jpg"
           alt="Image"
           width={900}
           height={900}
-          className="w-full h-auto rounded-[20px] object-contain"
+          className="w-full h-auto rounded-[20px] object-contain flex-1 max-w-[400px] order-2"
         />
+
+        <div className="block xl:hidden order-3 mt-8">
+          <a href="/troll.pdf" className="text-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 inline-block no-underline cursor-pointer">
+            Download My CV
+          </a>
+        </div>
       </div>
     </div>
   );
