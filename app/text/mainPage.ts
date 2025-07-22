@@ -30,6 +30,6 @@ export const aboutMe = {
 export const education = {
     header: "My Education",
     paragraphs: [
-        "???"
+        "Under review by the editorial department..."
     ]
 }
