@@ -8,7 +8,7 @@ import Footer from "./ui/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Website",
+  title: "Mihai's Website",
   description: "A personal website built with Next.js",
 };
 
@@ -18,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="text-xs md:text-base xl:text-lg tracking-widest">
+    <html lang="en" className="text-sm md:text-base xl:text-base tracking-widest">
       <body className={inter.className}>
         <div className="grid grid-rows-[auto_1fr]">
-          <NavigationBar height="h-12" spacing="px-4"/>
+          <NavigationBar height="h-12" spacing="px-4" />
           {children}
           <BackToTopButton />
           <Footer />

@@ -9,6 +9,15 @@ export default function HobbiesPage() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-8">
       <div className="max-w-4xl w-full">
+                <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">
+                    My Hobbies
+                </h1>
+                <p className="text-lg md:text-xl text-gray-700 mb-6">
+                    This is the page for my hobbies and interests.
+                </p>
+            </div>
+
+      {/* <div className="max-w-4xl w-full">
         <h1 className="text-4xl md:text-6xl font-bold text-center mb-8">
           My Hobbies
         </h1>
@@ -29,9 +38,9 @@ export default function HobbiesPage() {
           </div>
           
           <div className="bg-gray-50 rounded-lg p-6 shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Photography</h2>
+            <h2 className="text-2xl font-bold mb-4">Hiking</h2>
             <p className="text-gray-700">
-              Capturing moments and exploring the world through the lens of a camera.
+              I love exploring nature trails, enjoying scenic views, and staying active.
             </p>
           </div>
           
@@ -42,7 +51,7 @@ export default function HobbiesPage() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
